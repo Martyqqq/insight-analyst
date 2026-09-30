@@ -2,6 +2,7 @@
 
 ## Architecture
 ![General Architecture Flowgram](image.png)
+
 The architecture of Insight Analyst follows a specific path, ensuring the LLM takes certain steps before producing the final result. The overarching steps are provided in Figure 1. Explanations for the precise steps are as follows:
 1.	The end user will launch the web app using Streamlit UI. Stramlit is a Python library that will load the app.py file, containing the front and back-end code. 
 2.	The user will then upload a CSV file for analyzing. This can be from Splunk or Windows Event Viewer.
