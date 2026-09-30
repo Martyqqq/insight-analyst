@@ -1,1 +1,13 @@
 # insight-analyst
+
+## Architecture
+![General Architecture Flowgram](image.png)
+The architecture of Insight Analyst follows a specific path, ensuring the LLM takes certain steps before producing the final result. The overarching steps are provided in Figure 1. Explanations for the precise steps are as follows:
+1.	The end user will launch the web app using Streamlit UI. Stramlit is a Python library that will load the app.py file, containing the front and back-end code. 
+2.	The user will then upload a CSV file for analyzing. This can be from Splunk or Windows Event Viewer.
+3.	Pandas will read the CSV and ensure a smooth hand-off of data to the app. Pandas is a Python library used for reading data from files, it enables sorting, and it allows developers to combine different datasets. Alongside this is a function to help align Windows Event Viewer columns. This ensures correct data display in the Preview section of the final result. 
+4.	The next step is to process this data; however, this may be an issue with larger files. To prevent any errors, the data must be truncated. This data will be sent to the model in multiple chunks, ensuring there are no overflows. This includes row limiting and only extracting a limited number of characters. The row count is limited to 200 and the characters are capped at 300. 
+5.	This data will now need to be converted to JSON. Models do not understand CSV files, but rather structured data that is labeled. Converting to JSON is one of the best ways to prompt any model, as it will easily follow instructions, without having to clarify more than once. 
+6.	All extracted data is now ready to send off, alongside the pre-defined prompt in the code. This prompt is sent by calling the local API server on the system. The model will respond as if it were being prompted in a chat.
+7.	A summary of findings will be generated, including a preview of the CSV contents, an incident summary, Event IDs gathered, the scenario that unfolded, possible MITRE ATT&CK techniques, related Event IDs to look into, applications or services that should be looked into, how to contain and remove the malware or threat actor, future steps to ensure a hardened system, guidelines on verifying a clean machine, and a full markdown report.
+8.	All of this will be displayed on the screen. Alongside that is the ability to download the markdown report that was created. This report is a copy of what was displayed on the screen.
