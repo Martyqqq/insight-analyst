@@ -1,4 +1,9 @@
 # insight-analyst
+Insight Analyst is an LLM-powered SOC assistant. Its main purpose is to speed up the triage and summarization of security incidents. 
+With this tool SOC work becomes extremely efficient and quick, allowing for the analyst to focus on work beyond triaging.
+In turn it can result in a faster response time, a safer environment, and less downtime.
+
+While this project is geared towards SOC analysts, this can be used by anyone with the appropriate hardware and software stack.
 
 ## Architecture
 ![General Architecture Flowgram](image.png)
