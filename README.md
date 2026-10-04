@@ -5,6 +5,37 @@ In turn it can result in a faster response time, a safer environment, and less d
 
 While this project is geared towards SOC analysts, this can be used by anyone with the appropriate hardware and software stack.
 
+## Hardware Used
+### Graphics Card
+- Gigabyte GAMING OC GeForce RTX 4070
+  - 12 GB VRAM
+  - GDDR6X memory
+  - Core clock 1920 MHz
+  - Boost clock 2565 MHz
+  - PCIe x16 interface
+### CPU
+- Intel Core i9-12900K
+  - 16 cores
+  - 24 threads
+  - 3.2 GHz | up to 5.2 GHz
+### Motherboard
+- MSI MAG Z790 TOMAHAWK WIFI LGA1700
+  - DDR4
+  - x2 PCIe x16 slots
+  - x5 M.2 slots
+### Memory
+- Corsair Vengeance RGB Pro 32 GB
+  - 2 x 16 GB
+  - DDR4
+  - 3600 MHz
+  - 18-22-22-42 timing
+### Storage
+- Samsung 990 Pro
+  - 2 TB
+  - M.2-2280 form factor
+  - NVME
+  - PCIe 4.0 interface
+
 ## Architecture
 ![General Architecture Flowgram](image.png)
 
