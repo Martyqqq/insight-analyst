@@ -36,6 +36,21 @@ While this project is geared towards SOC analysts, this can be used by anyone wi
   - NVME
   - PCIe 4.0 interface
 
+## Usage Instructions
+1. Download and install Python 3.12.6
+   - This specific version is being used due to stable Windows wheels for Python.
+2. Download and install Ollama
+3. Download and install Qwen2.5
+4. Create a project folder for your virtual environment 
+   ```
+   mkdir project && cd project
+   ```
+5. Create the virtual environment
+   ```
+   py -m venv .venv
+   . .venv\Scripts\activate
+    ```
+
 ## Architecture
 ![General Architecture Flowgram](image.png)
 
