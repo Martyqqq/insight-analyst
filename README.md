@@ -39,8 +39,8 @@ While this project is geared towards SOC analysts, this can be used by anyone wi
 ## Usage Instructions
 1. Download and install Python 3.12.6
    - This specific version is being used due to stable Windows wheels for Python.
-2. Download and install Ollama
-3. Download and install Qwen2.5
+2. Download and install LM Studio
+3. Download and install Qwen2.5:7B
 4. Create a project folder for your virtual environment 
    ```
    mkdir project && cd project
