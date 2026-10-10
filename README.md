@@ -50,6 +50,7 @@ While this project is geared towards SOC analysts, this can be used by anyone wi
    py -m venv .venv
    . .venv\Scripts\activate
     ```
+6. Run AppLauncher.ps1
 
 ## Architecture
 ![General Architecture Flowgram](image.png)
